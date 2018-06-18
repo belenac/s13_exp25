@@ -1,0 +1,24 @@
+<table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Detalle</th>
+          <th>Categoría</th>
+          <th>Valor</th>
+          <th>Porcentaje</th>
+          <th>IVA</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= @sale.cod %></td>
+          <td><%= @sale.detail %></td>
+          <td><%= @sale.category %></td>
+          <td>$ <%= @sale.value %></td>
+          <td><%= @sale.discount %> %</td>
+          <td><%= @sale.tax %></td>
+          <td>$ <%= @iva_incl %></td>
+        </tr>
+      </tbody>
+    </table>
